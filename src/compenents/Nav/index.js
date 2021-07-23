@@ -3,6 +3,23 @@ import { Transition } from "@headlessui/react";
 
 function Nav() {
   const [isOpen, setIsOpen] = useState(false);
+
+  function loadHompage(){
+    document.location.replace('/');
+  }
+
+  function loadFavorites(){
+    document.location.replace('/favorites');
+  }
+
+  function loadLogin(){
+    document.location.replace('/login');
+  }
+
+  function loadSignup(){
+    document.location.replace('/singup');
+  }
+
   return (
     <div>
       <nav className="bg-gray-800">
@@ -19,35 +36,30 @@ function Nav() {
               <div className="hidden md:block">
                 <div className="ml-10 flex items-baseline space-x-4">
                   <a
-                    href="#"
                     className=" hover:bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
                     Dashboard
                   </a>
 
                   <a
-                    href="#"
                     className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
                     Team
                   </a>
 
                   <a
-                    href="#"
                     className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
                     Projects
                   </a>
 
                   <a
-                    href="#"
                     className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
                     Calendar
                   </a>
 
                   <a
-                    href="#"
                     className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
                     Reports
@@ -153,21 +165,6 @@ function Nav() {
           )}
         </Transition>
       </nav>
-
-      <header className="bg-white shadow">
-        <div className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-          <h1 className="text-3xl font-bold text-gray-900">Dashboard</h1>
-        </div>
-      </header>
-      <main>
-        <div className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
-          {/* <!-- Replace with your content --> */}
-          <div className="px-4 py-6 sm:px-0">
-            <div className="border-4 border-dashed border-gray-200 rounded-lg h-96"></div>
-          </div>
-          {/* <!-- /End replace --> */}
-        </div>
-      </main>
     </div>
   );
 }
