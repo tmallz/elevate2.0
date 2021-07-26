@@ -29,7 +29,7 @@ function Nav() {
               <div className="flex-shrink-0">
                 <img
                   className="h-8 w-8"
-                  src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
+                  src="https://icons-for-free.com/iconfiles/png/512/elevator-1321215617605239487.png"
                   alt="Workflow"
                 />
               </div>
@@ -37,32 +37,30 @@ function Nav() {
                 <div className="ml-10 flex items-baseline space-x-4">
                   <a
                     className=" hover:bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium"
+                    onClick={() => loadHompage()}
                   >
-                    Dashboard
+                    Home
                   </a>
 
                   <a
                     className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    onClick={() => loadFavorites()}
                   >
-                    Team
+                    Favorites
                   </a>
 
                   <a
                     className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    onClick={() => loadLogin()}
                   >
-                    Projects
+                    Login
                   </a>
 
                   <a
                     className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    onClick={() => loadSignup()}
                   >
-                    Calendar
-                  </a>
-
-                  <a
-                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                  >
-                    Reports
+                    Signup
                   </a>
                 </div>
               </div>
@@ -128,32 +126,29 @@ function Nav() {
               <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                 <a
                   className="hover:bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium"
+                  onClick={() => loadHompage()}
                 >
-                  Dashboard
+                  Home
                 </a>
 
                 <a
                   className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                  onClick={() => loadFavorites()}
                 >
-                  Team
+                  Favorite
                 </a>
 
                 <a
                   className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                  onClick={() => loadLogin()}
                 >
-                  Projects
+                  Login
                 </a>
 
                 <a
                   className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
                   Calendar
-                </a>
-
-                <a
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                >
-                  Reports
                 </a>
               </div>
             </div>
