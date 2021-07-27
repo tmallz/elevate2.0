@@ -4,6 +4,7 @@ import './App.css';
 import Nav from './compenents/Nav'
 import Homepage from './pages/homepage'
 import Login from './pages/login'
+import Signup from './pages/signup'
 
 function App() {
   return (
@@ -15,6 +16,9 @@ function App() {
         </Route>
         <Route exact path ='/login'>
           <Login />
+        </Route>
+        <Route exact path ='/signup'>
+          <Signup />
         </Route>
       </Router>
     </div>

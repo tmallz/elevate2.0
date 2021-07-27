@@ -1,17 +1,17 @@
 import React, {useState} from "react";
 
-function login(){
+function signup(){
 
     // const [username, setUsername] = useState("");
     // const [emai, setEmail] = useState("");
 
-    function loadSignup(){
-        document.location.replace('/signup')
+    function loadLogin(){
+        document.location.replace('/login')
     }
     
     const handleFormSubmit = event => {
         event.preventDefault();
-
+        
 
     }
 
@@ -64,10 +64,10 @@ function login(){
               />
             </div>
             <div className="flex items-center justify-between">
-              <button className="px-4 py-2 rounded text-white inline-block shadow-lg bg-blue-500 hover:bg-blue-600 focus:bg-blue-700" type="submit">Sign In</button>
+              <button className="px-4 py-2 rounded text-white inline-block shadow-lg bg-blue-500 hover:bg-blue-600 focus:bg-blue-700" type="submit">Login</button>
               <a
                 className="inline-block align-baseline font-normal text-sm text-blue-500 hover:text-blue-800"
-                onClick ={() => loadSignup()}
+                onClick ={() => loadLogin()}
               >
                 Sign Up
               </a>
@@ -81,4 +81,4 @@ function login(){
     )
 }
 
-export default login;
+export default signup;

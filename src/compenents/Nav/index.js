@@ -17,7 +17,7 @@ function Nav() {
   }
 
   function loadSignup(){
-    document.location.replace('/singup');
+    document.location.replace('/signup');
   }
 
   return (
