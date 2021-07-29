@@ -36,7 +36,7 @@ class signup extends Component{
                 <div
                 className="text-gray-800 text-2xl flex justify-center border-b-2 py-2 mb-4"
                 >
-                Elevate Login
+                Elevate Sign Up
                 </div>
                 <div className="mb-4">
                 <label
@@ -79,12 +79,12 @@ class signup extends Component{
                 />
                 </div>
                 <div className="flex items-center justify-between">
-                <button className="px-4 py-2 rounded text-white inline-block shadow-lg bg-blue-500 hover:bg-blue-600 focus:bg-blue-700" type="submit">Login</button>
+                <button className="px-4 py-2 rounded text-white inline-block shadow-lg bg-blue-500 hover:bg-blue-600 focus:bg-blue-700" type="submit">Sign Up</button>
                 <a
                     className="inline-block align-baseline font-normal text-sm text-blue-500 hover:text-blue-800"
                     onClick ={this.loadLogin}
                 >
-                    Sign Up
+                   Click here to Login
                 </a>
                 </div>
             </form>
