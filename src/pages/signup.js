@@ -1,10 +1,22 @@
 import React, {Component} from "react";
+import API from '../utils/API'
 
 class signup extends Component{
 
     state ={
         email: "",
         password: ""
+    }
+
+    userSave = () => {
+        API.createUser({
+            email: this.state.email,
+            password: this.state.password
+        }).then(res => {
+            console.log(res)
+        }).catch(err => {
+            alert(err);
+        })
     }
 
     loadLogin = () => {
@@ -14,7 +26,6 @@ class signup extends Component{
     handleFormSubmit = event => {
         event.preventDefault();
         
-
     }
 
     handleInputChange = e =>{
