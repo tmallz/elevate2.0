@@ -25,6 +25,16 @@ class signup extends Component{
     
     handleFormSubmit = event => {
         event.preventDefault();
+        if(!this.state.email || !this.state.password){
+            alert('One or more of the fields is missing')
+        }else{
+            this.userSave();
+        }
+
+        this.setState({
+            email: '',
+            password:'',
+        })
         
     }
 
@@ -90,7 +100,11 @@ class signup extends Component{
                 />
                 </div>
                 <div className="flex items-center justify-between">
-                <button className="px-4 py-2 rounded text-white inline-block shadow-lg bg-blue-500 hover:bg-blue-600 focus:bg-blue-700" type="submit">Sign Up</button>
+                <button className="px-4 py-2 rounded text-white inline-block shadow-lg bg-blue-500 hover:bg-blue-600 focus:bg-blue-700" type="submit"
+                        onClick = {this.handleFormSubmit}
+                >
+                    Sign Up
+                </button>
                 <a
                     className="inline-block align-baseline font-normal text-sm text-blue-500 hover:text-blue-800"
                     onClick ={this.loadLogin}
